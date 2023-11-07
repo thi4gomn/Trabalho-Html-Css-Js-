@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Regiões do Brasil</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            background-image: linear-gradient(rgba(119, 116, 116, 0.5), rgba(172, 170, 170, 0.5)), url('pack imagens/bandeiraBrasil.jpg');
+            background-size: cover;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            height: 100vh;
+            padding-top: 20px; 
+        }
+        h1 {
+            color: #002776; 
+            font-size: 7em;
+            text-shadow: 2px 2px #ffcc29; 
+            margin-bottom: -30px; 
+        }
+        h2 {
+            color: #002776; 
+            font-size: 2em;
+            text-shadow: 2px 2px #ffcc29; 
+        }
+        #regioes {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+        button {
+            background-color: #002776;
+            color: #ffcc29;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+
+            
+            border-radius: 12px; 
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+            min-width: 250px;
+        }
+        .bottom {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Regiões do Brasil</h1>
+    <h2>Embarque nesta jornada conosco e descubra os encantos de cada região do Brasil! Explore pontos turísticos deslumbrantes, saboreie as delícias culinárias típicas e mergulhe na rica história de cada região.</h2>
+    <div id="regioes">
+        <a href="norte.html"><button>Norte</button></a>
+        <a href="nordeste.html"><button>Nordeste</button></a>
+        <a href="centro-oeste.html"><button>Centro-Oeste</button></a>
+        <a href="sudeste.html"><button>Sudeste</button></a>
+        <a href="sul.html"><button>Sul</button></a>
+    </div>
+    <div class="bottom">
+        <a href="pageCriadores.html"><button>Criadores</button></a>
+    </div>
+</body>
+</html>

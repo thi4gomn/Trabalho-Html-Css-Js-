@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Região Sudeste do Brasil</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('pack imagens/bandeiraBrasil.jpg');
+            background-size: cover;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+        }
+        .title-container {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%; 
+        }
+        h1 {
+            color: #002776; 
+            font-size: 2em; 
+            text-shadow: 2px 2px #ffcc29; 
+        }
+        h2 {
+            color: #002776; 
+            font-size: 1.5em; 
+            text-shadow: 2px 2px #ffcc29; 
+        }
+        #estados {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-bottom: 50px;
+        }
+        button {
+            background-color: #002776;
+            color: #ffcc29;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-bottom: 10px; 
+            cursor: pointer;
+
+            
+            border-radius: 12px; 
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        .bottom {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Adicionando Media Queries */
+        @media screen and (max-width:600px) {
+          h1 { font-size:1.5em; }
+          h2 { font-size:1.2em; }
+          .title-container { width:auto; padding-left:10%; padding-right:10%; }
+          button { font-size:.8em; padding-left:.8em; padding-right:.8em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="title-container">
+        <br/><br/><br/><br/><br/><br/><br/><br/>
+        <h1>Região Sudeste do Brasil</h1>
+        <h2>Venha conhecer o Sudeste do Brasil!</h2>
+        <img src="pack imagens/sudesteLocalizacao.png" alt="Localização da Região Sudeste">
+    </div>
+    <br/><br/><br/><br/><br/><br/><br/><p><strong style="font-size:1.2em;">Escolha o estado:</strong></p> 
+    <div id="estados">
+        <a href="PaginaEstadoSudeste/Vitoria.html""><button>Espírito Santo</button></a>
+        <a href="PaginaEstadoSudeste/Belo_Horizonte.html"><button>Minas Gerais</button></a>
+        <a href="PaginaEstadoSudeste/RiodeJaneiro.html"><button>Rio de Janeiro</button></a>
+        <a href="PaginaEstadoSudeste/Sâo_Paulo.html"><button>São Paulo</button></a>
+    </div>
+    <div class="bottom">
+        <a href="homePage.html"><button>Voltar para Home</button></a>
+    </div>
+</body>
+</html>

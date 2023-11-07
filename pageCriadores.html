@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Criadores</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            background-image: linear-gradient(rgba(119, 116, 116, 0.5), rgba(172, 170, 170, 0.5)), url('pack imagens/bandeiraBrasil.jpg');
+            background-size: cover;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Alterado de center para flex-start */
+            height: 100vh;
+            padding-top: 20px; 
+        }
+        h1 {
+            color: #002776; 
+            font-size: 7em;
+            text-shadow: 2px 2px #ffcc29; 
+            margin-bottom: -3px; 
+        }
+        h2 {
+            color: #002776; 
+            font-size: 2em;
+            text-shadow: 2px 2px #ffcc29; 
+        }
+        #criadores {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .criador {
+            background-color: rgba(255,255,255,0.7);
+            margin-bottom: 20px;
+            padding-top:10px;
+            padding-bottom:10px;
+        }
+        .linkedin {
+            color: #0e76a8;
+        }
+        button {
+            background-color: #002776;
+            color: #ffcc29;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+
+            
+            cursor: pointer;
+
+            
+            border-radius: 12px; 
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        .bottom {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Criadores</h1>
+    <div id="criadores">
+        <!-- Adicione um bloco para cada criador -->
+        <div class="criador">
+            <h2>Felipe Augusto Lenharo de Lima || RA:202302378188</h2></br>
+            <h2>202302378188@alunos.estacio.br</h2>
+        </div>
+        <div class="criador">
+            <h2>Jose Roberto dos Ramos || RA:202304419051</h2></br>
+            <h2>202304419051@alunos.estacio.br</h2>
+        </div>
+        <div class="criador">
+            <h2>Thiago Morais Nunes || RA:202303309091</h2></br>
+            <h2>202303309091@alunos.estacio.br</h2>
+        </div>
+    </div>
+    <div class="bottom">
+        <a href="homePage.html"><button>Voltar para Home</button></a>
+    </div>
+</body>
+</html>

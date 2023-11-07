@@ -1,0 +1,66 @@
+img {
+    height: auto;
+    width: 500px;
+}
+
+body {
+    background-color: rgba(8, 91, 234, 0.399);
+}
+
+h1 {
+    font-size: 50px;
+    font-family: Verdana;
+    text-align: center;
+}
+
+p {
+    font-family: Arial;
+    font-size: 20px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    margin: 20px; 
+    float: left;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: azure ;
+    border-style: double;
+    border-bottom-width: 5px;
+    border-bottom-right-radius: 15px;
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-left-width: 5px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#comidas-tipicas-title {
+    text-align: center;
+    clear: both;
+}
+
+.texto1{
+    text-decoration: overline; color: blue;
+}
+
+body{
+    margin: 25px ;
+}
+
+a {
+    color: blue;
+}
+
+.image{
+    display: inline-block;
+    vertical-align: middle;
+    
+}
