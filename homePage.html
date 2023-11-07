@@ -55,20 +55,35 @@
             bottom: 0;
             width: 100%;
         }
+        #playPauseBtn {
+            font-size: 14px;
+            padding: 10px 20px;
+        }
     </style>
 </head>
 <body>
     <h1>Regiões do Brasil</h1>
     <h2>Embarque nesta jornada conosco e descubra os encantos de cada região do Brasil! Explore pontos turísticos deslumbrantes, saboreie as delícias culinárias típicas e mergulhe na rica história de cada região.</h2>
     <div id="regioes">
-        <a href="norte.html"><button>Norte</button></a>
-        <a href="nordeste.html"><button>Nordeste</button></a>
-        <a href="centro-oeste.html"><button>Centro-Oeste</button></a>
-        <a href="sudeste.html"><button>Sudeste</button></a>
-        <a href="sul.html"><button>Sul</button></a>
+        <a href="norte.html"><button onclick="playClickSound()">Norte</button></a>
+        <a href="nordeste.html"><button onclick="playClickSound()">Nordeste</button></a>
+        <a href="centro-oeste.html"><button onclick="playClickSound()">Centro-Oeste</button></a>
+        <a href="sudeste.html"><button onclick="playClickSound()">Sudeste</button></a>
+        <a href="sul.html"><button onclick="playClickSound()">Sul</button></a>
     </div>
     <div class="bottom">
-        <a href="pageCriadores.html"><button>Criadores</button></a>
+        <a href="pageCriadores.html"><button onclick="playClickSound()">Criadores</button></a>
     </div>
+    <audio id="hino" src="pack imagens/hino_nacional.mp3" preload="auto"></audio>
+    <button id="playPauseBtn" onclick="document.getElementById('hino').play()">Play</button>
+    <button id="playPauseBtn" onclick="document.getElementById('hino').pause()">Pause</button>
+    <audio id="clickSound" src="pack imagens/click.mp3" preload="auto"></audio>
+    <script>
+        function playClickSound() {
+            var clickSound = document.getElementById('clickSound');
+            clickSound.currentTime = 0;
+            clickSound.play();
+        }
+    </script>
 </body>
 </html>
